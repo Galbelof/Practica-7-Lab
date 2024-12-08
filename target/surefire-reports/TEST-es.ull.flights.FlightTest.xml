@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flights.FlightTest" time="0.032" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flights.FlightTest" time="0.047" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\smoki\AppData\Local\Temp\surefire3708974148305314946\surefirebooter16341238197927751688.jar C:\Users\smoki\AppData\Local\Temp\surefire3708974148305314946 2024-12-08T23-38-10_356-jvmRun1 surefire17912876221605512464tmp surefire_016691954043917795280tmp"/>
+    <property name="sun.java.command" value="C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039\surefirebooter7633486025305146897.jar C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039 2024-12-08T23-43-48_313-jvmRun1 surefire9580324155564348986tmp surefire_011107650581538678241tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\smoki\Desktop\cosas\cosas\cosas\4ª\lab\Practica-7-Lab\target\test-classes;C:\Users\smoki\Desktop\cosas\cosas\cosas\4ª\lab\Practica-7-Lab\target\classes;C:\Users\smoki\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\smoki\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\smoki\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\smoki\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\smoki\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\smoki\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\smoki\AppData\Local\Temp\surefire3708974148305314946\surefirebooter16341238197927751688.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039\surefirebooter7633486025305146897.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-86"/>
@@ -56,7 +56,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddPassenger" classname="es.ull.flights.FlightTest" time="0.032"/>
+  <testcase name="testAddPassenger" classname="es.ull.flights.FlightTest" time="0.015"/>
   <testcase name="testAddPassengerExceedingCapacity" classname="es.ull.flights.FlightTest" time="0"/>
   <testcase name="testRemovePassenger" classname="es.ull.flights.FlightTest" time="0"/>
   <testcase name="testInvalidFlightNumber" classname="es.ull.flights.FlightTest" time="0"/>
