@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039\surefirebooter7633486025305146897.jar C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039 2024-12-08T23-43-48_313-jvmRun1 surefire9580324155564348986tmp surefire_011107650581538678241tmp"/>
+    <property name="sun.java.command" value="C:\Users\smoki\AppData\Local\Temp\surefire5625140493950737967\surefirebooter12231957189342690553.jar C:\Users\smoki\AppData\Local\Temp\surefire5625140493950737967 2024-12-09T00-04-28_154-jvmRun1 surefire9520654562021574253tmp surefire_015032941505792892127tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\smoki\Desktop\cosas\cosas\cosas\4ª\lab\Practica-7-Lab\target\test-classes;C:\Users\smoki\Desktop\cosas\cosas\cosas\4ª\lab\Practica-7-Lab\target\classes;C:\Users\smoki\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\smoki\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\smoki\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\smoki\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\smoki\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\smoki\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\smoki\AppData\Local\Temp\surefire13314924501195672039\surefirebooter7633486025305146897.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\smoki\AppData\Local\Temp\surefire5625140493950737967\surefirebooter12231957189342690553.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-86"/>
