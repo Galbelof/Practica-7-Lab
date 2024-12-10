@@ -53,7 +53,6 @@ class PassengerTest {
         passenger.joinFlight(flight);
         passenger.setFlight(null);
         assertNull(passenger.getFlight());
-        flight.removePassenger(passenger); // Aseguramos que el vuelo lo elimina también
-        assertEquals(0, flight.getNumberOfPassengers()); // Verificamos que no quedan pasajeros
+        assertEquals(0, flight.getNumberOfPassengers());
     }
 }
