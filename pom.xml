@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.manning.junitbook</groupId>
     <artifactId>ch13-continuous</artifactId>
@@ -13,6 +13,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- SonarCloud properties -->
+        <sonar.organization>galbelof</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.projectKey>Galbelof_Practica-7-Lab</sonar.projectKey>
     </properties>
 
     <build>
@@ -22,7 +27,6 @@
                 <version>2.22.2</version>
             </plugin>
 
-            <!-- AGREGAMOS JACOCO-->
             <!-- Plugin de JaCoCo -->
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -49,6 +53,13 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Plugin de SonarQube -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version>
+            </plugin>
         </plugins>
     </build>
 
@@ -68,10 +79,9 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>RELEASE</version>
+            <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
-
 
         <!-- Pruebas unitarias -->
         <dependency>
@@ -92,15 +102,9 @@
             <artifactId>graph-maven-plugin</artifactId>
             <version>1.2.3</version>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
-    <!-- configuracion 1 -->
+    <!-- Configuración de perfiles -->
     <profiles>
         <profile>
             <id>coverage</id>
@@ -134,6 +138,4 @@
             </build>
         </profile>
     </profiles>
-
-
 </project>

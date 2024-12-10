@@ -2,94 +2,94 @@
 <testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-10T20:23:44 WET" name="Surefire suite" finished-at="2024-12-10T20:23:44 WET" duration-ms="101">
+  <suite started-at="2024-12-10T21:14:32 WET" name="Surefire suite" finished-at="2024-12-10T21:14:32 WET" duration-ms="87">
     <groups>
     </groups>
-    <test started-at="2024-12-10T20:23:44 WET" name="Surefire test" finished-at="2024-12-10T20:23:44 WET" duration-ms="101">
+    <test started-at="2024-12-10T21:14:32 WET" name="Surefire test" finished-at="2024-12-10T21:14:32 WET" duration-ms="87">
       <class name="es.ull.passengers.PassengerTest">
-        <test-method signature="testCannotJoinFullFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testCannotJoinFullFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testCannotJoinFullFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testCannotJoinFullFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCannotJoinFullFlight -->
-        <test-method signature="testCannotJoinRejectedFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testCannotJoinRejectedFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testCannotJoinRejectedFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testCannotJoinRejectedFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCannotJoinRejectedFlight -->
-        <test-method signature="testCannotLeavePreviousFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testCannotLeavePreviousFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testCannotLeavePreviousFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testCannotLeavePreviousFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCannotLeavePreviousFlight -->
-        <test-method signature="testInvalidCountryCode()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testInvalidCountryCode" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testInvalidCountryCode()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testInvalidCountryCode" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidCountryCode -->
-        <test-method signature="testLeaveFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testLeaveFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLeaveFlight -->
-        <test-method signature="testJoinFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testJoinFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        <test-method signature="testJoinFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testJoinFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJoinFlight -->
-        <test-method signature="testSwitchFlights()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testSwitchFlights" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        <test-method signature="testLeaveFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testLeaveFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSwitchFlights -->
-        <test-method signature="testRejoinSameFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testRejoinSameFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        </test-method> <!-- testLeaveFlight -->
+        <test-method signature="testRejoinSameFlight()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testRejoinSameFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRejoinSameFlight -->
-        <test-method signature="testValidPassengerCreation()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testValidPassengerCreation" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        <test-method signature="testSwitchFlights()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testSwitchFlights" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidPassengerCreation -->
-        <test-method signature="testToString()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T20:23:44 WET" name="testToString" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        </test-method> <!-- testSwitchFlights -->
+        <test-method signature="testToString()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testToString" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToString -->
+        <test-method signature="testValidPassengerCreation()[pri:0, instance:es.ull.passengers.PassengerTest@607fbe09]" started-at="2024-12-10T21:14:32 WET" name="testValidPassengerCreation" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidPassengerCreation -->
       </class> <!-- es.ull.passengers.PassengerTest -->
       <class name="es.ull.flights.FlightTest">
-        <test-method signature="testAddAndRemovePassengerMultipleTimes()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testAddAndRemovePassengerMultipleTimes" finished-at="2024-12-10T20:23:44 WET" duration-ms="15" status="PASS">
+        <test-method signature="testAddAndRemovePassengerMultipleTimes()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testAddAndRemovePassengerMultipleTimes" finished-at="2024-12-10T21:14:32 WET" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddAndRemovePassengerMultipleTimes -->
-        <test-method signature="testAddDuplicatePassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testAddDuplicatePassenger" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testAddDuplicatePassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testAddDuplicatePassenger" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddDuplicatePassenger -->
-        <test-method signature="testAddPassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testAddPassenger" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddPassenger -->
-        <test-method signature="testExceedingCapacity()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testExceedingCapacity" finished-at="2024-12-10T20:23:44 WET" duration-ms="2" status="PASS">
+        <test-method signature="testExceedingCapacity()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testExceedingCapacity" finished-at="2024-12-10T21:14:32 WET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExceedingCapacity -->
-        <test-method signature="testFillFlightToCapacity()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testFillFlightToCapacity" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testAddPassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testAddPassenger" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFillFlightToCapacity -->
-        <test-method signature="testInvalidFlightNumber()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testInvalidFlightNumber" finished-at="2024-12-10T20:23:44 WET" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidFlightNumber -->
-        <test-method signature="testFlightWithNoPassengers()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testFlightWithNoPassengers" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        </test-method> <!-- testAddPassenger -->
+        <test-method signature="testFlightWithNoPassengers()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testFlightWithNoPassengers" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightWithNoPassengers -->
-        <test-method signature="testRemoveNonexistentPassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testRemoveNonexistentPassenger" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        <test-method signature="testFillFlightToCapacity()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testFillFlightToCapacity" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillFlightToCapacity -->
+        <test-method signature="testInvalidFlightNumber()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testInvalidFlightNumber" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidFlightNumber -->
+        <test-method signature="testRemoveNonexistentPassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testRemoveNonexistentPassenger" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveNonexistentPassenger -->
-        <test-method signature="testRemovePassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testRemovePassenger" finished-at="2024-12-10T20:23:44 WET" duration-ms="0" status="PASS">
+        <test-method signature="testRemovePassenger()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testRemovePassenger" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemovePassenger -->
-        <test-method signature="testRemovePassengerFromEmptyFlight()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testRemovePassengerFromEmptyFlight" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testRemovePassengerFromEmptyFlight()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testRemovePassengerFromEmptyFlight" finished-at="2024-12-10T21:14:32 WET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemovePassengerFromEmptyFlight -->
-        <test-method signature="testValidFlightNumber()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T20:23:44 WET" name="testValidFlightNumber" finished-at="2024-12-10T20:23:44 WET" duration-ms="1" status="PASS">
+        <test-method signature="testValidFlightNumber()[pri:0, instance:es.ull.flights.FlightTest@2a8d39c4]" started-at="2024-12-10T21:14:32 WET" name="testValidFlightNumber" finished-at="2024-12-10T21:14:32 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidFlightNumber -->
