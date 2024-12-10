@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Flight.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ch13-continuous</a> &gt; <a href="index.source.html" class="el_package">es.ull.flights</a> &gt; <span class="el_source">Flight.java</span></div><h1>Flight.java</h1><pre class="source lang-java linenums">package es.ull.flights;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import es.ull.passengers.Passenger;
+
+public class Flight {
+
+    private String flightNumber; ///&lt; The flight number.
+    private int seats; ///&lt; The total number of seats in the flight.
+<span class="fc" id="L14">    private Set&lt;Passenger&gt; passengers = new HashSet&lt;&gt;(); ///&lt; Set of passengers on the flight.</span>
+
+<span class="fc" id="L16">    private static String flightNumberRegex = &quot;^[A-Z]{2}\\d{3,4}$&quot;; ///&lt; Regular expression for validating flight numbers.</span>
+<span class="fc" id="L17">    private static Pattern pattern = Pattern.compile(flightNumberRegex); ///&lt; Pattern object for flight number validation.</span>
+
+<span class="fc" id="L19">    public Flight(String flightNumber, int seats) {</span>
+<span class="fc" id="L20">        Matcher matcher = pattern.matcher(flightNumber);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        if (!matcher.matches()) {</span>
+<span class="fc" id="L22">            throw new RuntimeException(&quot;Invalid flight number&quot;);</span>
+        }
+<span class="fc" id="L24">        this.flightNumber = flightNumber;</span>
+<span class="fc" id="L25">        this.seats = seats;</span>
+<span class="fc" id="L26">    }</span>
+
+    public String getFlightNumber() {
+<span class="fc" id="L29">        return flightNumber;</span>
+    }
+
+    public int getNumberOfPassengers() {
+<span class="fc" id="L33">        return passengers.size();</span>
+    }
+
+    public boolean addPassenger(Passenger passenger) {
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (getNumberOfPassengers() &gt;= seats) {</span>
+<span class="fc" id="L38">            throw new RuntimeException(&quot;Not enough seats for flight &quot; + getFlightNumber());</span>
+        }
+<span class="fc" id="L40">        passenger.setFlight(this);</span>
+<span class="fc" id="L41">        return passengers.add(passenger);</span>
+    }
+
+    public boolean removePassenger(Passenger passenger) {
+<span class="fc" id="L45">        passenger.setFlight(null);</span>
+<span class="fc" id="L46">        return passengers.remove(passenger);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

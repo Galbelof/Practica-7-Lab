@@ -1,23 +1,3 @@
-/*
- * ========================================================================
- *
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * ========================================================================
- */
 package es.ull.flights;
 
 import java.util.HashSet;
@@ -29,12 +9,12 @@ import es.ull.passengers.Passenger;
 
 public class Flight {
 
-    private String flightNumber;
-    private int seats;
-    private Set<Passenger> passengers = new HashSet<>();
+    private String flightNumber; ///< The flight number.
+    private int seats; ///< The total number of seats in the flight.
+    private Set<Passenger> passengers = new HashSet<>(); ///< Set of passengers on the flight.
 
-    private static String flightNumberRegex = "^[A-Z]{2}\\d{3,4}$";
-    private static Pattern pattern = Pattern.compile(flightNumberRegex);
+    private static String flightNumberRegex = "^[A-Z]{2}\\d{3,4}$"; ///< Regular expression for validating flight numbers.
+    private static Pattern pattern = Pattern.compile(flightNumberRegex); ///< Pattern object for flight number validation.
 
     public Flight(String flightNumber, int seats) {
         Matcher matcher = pattern.matcher(flightNumber);
