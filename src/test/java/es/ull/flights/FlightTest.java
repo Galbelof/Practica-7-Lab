@@ -43,7 +43,7 @@ public class FlightTest {
     @Test
     public void testAddPassenger() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         assertTrue(flight.addPassenger(passenger));
         assertEquals(1, flight.getNumberOfPassengers());
@@ -55,7 +55,7 @@ public class FlightTest {
     @Test
     public void testRemovePassenger() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         flight.addPassenger(passenger);
         assertTrue(flight.removePassenger(passenger));
@@ -68,8 +68,8 @@ public class FlightTest {
     @Test
     public void testExceedingCapacity() {
         Flight flight = new Flight("AB123", 1);
-        Passenger passenger1 = new Passenger("ID123", "John Doe", "US");
-        Passenger passenger2 = new Passenger("ID456", "Jane Doe", "CA");
+        Passenger passenger1 = new Passenger("ID123", "Michael Smith", "US");
+        Passenger passenger2 = new Passenger("ID456", "Anna Brown", "CA");
 
         flight.addPassenger(passenger1);
         assertThrows(RuntimeException.class, () -> flight.addPassenger(passenger2));
@@ -81,7 +81,7 @@ public class FlightTest {
     @Test
     public void testRemoveNonexistentPassenger() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         assertTrue(!flight.removePassenger(passenger));
         assertEquals(0, flight.getNumberOfPassengers());
@@ -93,7 +93,7 @@ public class FlightTest {
     @Test
     public void testAddDuplicatePassenger() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         flight.addPassenger(passenger);
         assertTrue(!flight.addPassenger(passenger));
@@ -115,8 +115,8 @@ public class FlightTest {
     @Test
     public void testFillFlightToCapacity() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger1 = new Passenger("ID123", "John Doe", "US");
-        Passenger passenger2 = new Passenger("ID456", "Jane Doe", "CA");
+        Passenger passenger1 = new Passenger("ID123", "Michael Smith", "US");
+        Passenger passenger2 = new Passenger("ID456", "Anna Brown", "CA");
 
         flight.addPassenger(passenger1);
         flight.addPassenger(passenger2);
@@ -131,7 +131,7 @@ public class FlightTest {
     @Test
     public void testAddAndRemovePassengerMultipleTimes() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         flight.addPassenger(passenger);
         assertEquals(1, flight.getNumberOfPassengers());
@@ -149,7 +149,7 @@ public class FlightTest {
     @Test
     public void testRemovePassengerFromEmptyFlight() {
         Flight flight = new Flight("AB123", 2);
-        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger = new Passenger("ID123", "Michael Smith", "US");
 
         assertTrue(!flight.removePassenger(passenger));
     }

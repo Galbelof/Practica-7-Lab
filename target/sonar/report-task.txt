@@ -3,5 +3,5 @@ projectKey=Galbelof_Practica-7-Lab
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.58530
 dashboardUrl=https://sonarcloud.io/dashboard?id=Galbelof_Practica-7-Lab
-ceTaskId=AZOyfapTJKvm80VB2gAF
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZOyfapTJKvm80VB2gAF
+ceTaskId=AZOzI1O9XfaNjVXxsr4D
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZOzI1O9XfaNjVXxsr4D
