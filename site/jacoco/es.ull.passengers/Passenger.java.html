@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Passenger.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Practica-7-Lab</a> &gt; <a href="index.source.html" class="el_package">es.ull.passengers</a> &gt; <span class="el_source">Passenger.java</span></div><h1>Passenger.java</h1><pre class="source lang-java linenums">package es.ull.passengers;
+
+import java.util.Arrays;
+import java.util.Locale;
+import es.ull.flights.Flight;
+public class Passenger {
+
+    private String identifier; ///&lt; Unique identifier for the passenger.
+    private String name; ///&lt; Name of the passenger.
+    private String countryCode; ///&lt; ISO country code of the passenger's nationality.
+    private Flight flight; ///&lt; Flight associated with the passenger.
+
+<span class="fc" id="L13">    public Passenger(String identifier, String name, String countryCode) {</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (!Arrays.asList(Locale.getISOCountries()).contains(countryCode)) {</span>
+<span class="fc" id="L15">            throw new RuntimeException(&quot;Invalid country code&quot;);</span>
+        }
+
+<span class="fc" id="L18">        this.identifier = identifier;</span>
+<span class="fc" id="L19">        this.name = name;</span>
+<span class="fc" id="L20">        this.countryCode = countryCode;</span>
+<span class="fc" id="L21">    }</span>
+
+    public String getIdentifier() {
+<span class="fc" id="L24">        return identifier;</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L28">        return name;</span>
+    }
+
+    public String getCountryCode() {
+<span class="fc" id="L32">        return countryCode;</span>
+    }
+
+    public Flight getFlight() {
+<span class="fc" id="L36">        return flight;</span>
+    }
+
+    public void joinFlight(Flight flight) {
+<span class="fc" id="L40">        Flight previousFlight = this.flight;</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (null != previousFlight) {</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">            if (!previousFlight.removePassenger(this)) {</span>
+<span class="fc" id="L43">                throw new RuntimeException(&quot;Cannot remove passenger&quot;);</span>
+            }
+        }
+<span class="fc" id="L46">        setFlight(flight);</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (null != flight) {</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">            if (!flight.addPassenger(this)) {</span>
+<span class="fc" id="L49">                throw new RuntimeException(&quot;Cannot add passenger&quot;);</span>
+            }
+        }
+<span class="fc" id="L52">    }</span>
+
+    public void setFlight(Flight flight) {
+<span class="fc" id="L55">        this.flight = flight;</span>
+<span class="fc" id="L56">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L60">        return &quot;Passenger &quot; + getName() + &quot; with identifier: &quot; + getIdentifier() + &quot; from &quot; + getCountryCode();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
